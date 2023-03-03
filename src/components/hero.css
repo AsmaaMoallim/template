@@ -14,17 +14,27 @@
 .hero-title {
   font-size: medium;
   margin: 0;
+  transition: all 0.4s;
+  animation: show_from_top 1s linear;
+  overflow: hidden;
 }
+
 .hero-subtitle {
   width: 90%;
   font-size: 3.5rem;
+  transition: all 0.4s;
+  animation: show_from_left 1s linear;
+  overflow: hidden;
+  animation-delay: 0.5s;
 }
 .hero-subtitle2 {
   width: 80%;
-
   font-size: medium;
   font-weight: 400;
   line-height: 18pt;
+  animation: show_from_left 1s linear;
+  overflow: hidden;
+  animation-delay: 0.6s;
 }
 
 .hero-content {
@@ -36,8 +46,51 @@
 
 .hero .button {
   font-size: large;
+  animation: apear 1s linear;
+  overflow: hidden;
+  animation-delay: 0.9s;
 }
-
 /* .Heroimg {
   width: 40%;
 } */
+
+@keyframes show_from_top {
+  0% {
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+
+@keyframes show_from_left {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}
+
+
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
