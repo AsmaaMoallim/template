@@ -1,0 +1,11 @@
+
+
+.button {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: .5rem;
+  background-color: #ba68c8; /* Green */
+  color: white;
+}
