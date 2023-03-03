@@ -12,16 +12,16 @@ function Navbar() {
             <Button value="Sign Up" />
           </li>
           <li>
-            <a href="Plans.asp">Plans</a>
-          </li>
-          <li>
-            <a href="Trips.asp">Trips</a>
+            <a href="ContactUs.asp">Contact Us</a>
           </li>
           <li>
             <a href="WhoWeAre.asp">Who we are</a>
           </li>
           <li>
-            <a href="ContactUs.asp">Contact Us</a>
+            <a href="Trips.asp">Trips</a>
+          </li>
+          <li>
+            <a href="Plans.asp">Plans</a>
           </li>
         </ul>
       </nav>
