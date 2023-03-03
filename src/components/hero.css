@@ -9,32 +9,31 @@
   padding: 2rem 5rem;
   font-size: calc(10px + 2vmin);
   color: rgb(0, 0, 0);
+
+  overflow: hidden;
 }
 
 .hero-title {
+  animation: show_from_top 1s linear forwards;
+  transition: all 0.4s;
   font-size: medium;
   margin: 0;
-  transition: all 0.4s;
-  animation: show_from_top 1s linear;
-  overflow: hidden;
 }
 
 .hero-subtitle {
+  animation: show_from_left 1s linear forwards;
+  animation-delay: 0.5s;
   width: 90%;
   font-size: 3.5rem;
   transition: all 0.4s;
-  animation: show_from_left 1s linear;
-  overflow: hidden;
-  animation-delay: 0.5s;
 }
 .hero-subtitle2 {
+  animation: show_from_left 1s linear forwards;
+  animation-delay: 0.6s;
   width: 80%;
   font-size: medium;
   font-weight: 400;
   line-height: 18pt;
-  animation: show_from_left 1s linear;
-  overflow: hidden;
-  animation-delay: 0.6s;
 }
 
 .hero-content {
@@ -42,13 +41,14 @@
 }
 .hero-content > * {
   margin: 10px;
+  opacity: 0;
 }
 
 .hero .button {
-  font-size: large;
-  animation: apear 1s linear;
+  animation: apear 1s linear forwards;
   overflow: hidden;
   animation-delay: 0.9s;
+  font-size: large;
 }
 /* .Heroimg {
   width: 40%;
@@ -56,8 +56,8 @@
 
 @keyframes show_from_top {
   0% {
-    transform: translatey(-100px);
     opacity: 0;
+    transform: translatey(-100px);
   }
   80% {
     opacity: 0;
@@ -70,8 +70,8 @@
 
 @keyframes show_from_left {
   0% {
-    transform: translatex(-100px);
     opacity: 0;
+    transform: translatex(-100px);
   }
   80% {
     opacity: 0;
@@ -81,7 +81,6 @@
     transform: translatex(0px);
   }
 }
-
 
 @keyframes apear {
   0% {

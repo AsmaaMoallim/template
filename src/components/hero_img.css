@@ -1,5 +1,8 @@
 .Heroimg > svg {
   width: 100%;
+  opacity: 0;
+  animation: apear 1s linear forwards;
+  animation-delay:  0.5s;
 }
 
 #Character,
@@ -30,11 +33,10 @@
 }
 
 #Cloud2 {
-      translate: -360px;
+  translate: -360px;
   transition: all 0.4s ease-in-out;
   animation: flow2 infinite 20s linear;
 }
-
 
 @keyframes flow1 {
   0% {
@@ -52,5 +54,13 @@
 
   100% {
     transform: translatex(450px);
+  }
+}
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
