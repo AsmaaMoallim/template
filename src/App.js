@@ -10,10 +10,11 @@ function someRequest() {
   return new Promise((resolve) => setTimeout(() => resolve(), 2500));
 }
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     someRequest().then(() => {
-      setIsLoading(!isLoading);
+      setIsLoading(isLoading);
+      // setIsLoading(!isLoading);
     });
   });
 

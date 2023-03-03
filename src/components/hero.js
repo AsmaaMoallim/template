@@ -1,6 +1,7 @@
 import "./hero.css";
-import Heroimg from "./hero_img.svg";
+// import Heroimg from "./hero_img.svg";
 import Button from "./button";
+import Heroimg from "./hero_img.js";
 
 function Hero() {
   return (
@@ -17,7 +18,10 @@ function Hero() {
         <Button value="Plan your trip" />
         <Button value="Pick a trip" />
       </div>
-      <img src={Heroimg} className="Heroimg" alt="Heroimg" />
+      {/* <div className="Heroimg"> */}
+        <Heroimg />
+      {/* </div> */}
+      {/* <img src={Heroimg} className="Heroimg" alt="Heroimg" /> */}
     </div>
   );
 }

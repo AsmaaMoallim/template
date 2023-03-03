@@ -1,0 +1,56 @@
+.Heroimg > svg {
+  width: 100%;
+}
+
+#Character,
+/* #Sun, */
+#Pin,
+/* #pin, */
+#rocks-1 {
+  transition: all 0.4s ease-in-out;
+  animation: float infinite 6s linear;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+#Cloud1 {
+  translate: -300px;
+  transition: all 0.4s ease-in-out;
+  animation: flow1 infinite 10s linear;
+}
+
+#Cloud2 {
+      translate: -360px;
+  transition: all 0.4s ease-in-out;
+  animation: flow2 infinite 20s linear;
+}
+
+
+@keyframes flow1 {
+  0% {
+    transform: translatex(-300px);
+  }
+
+  100% {
+    transform: translatex(500px);
+  }
+}
+@keyframes flow2 {
+  0% {
+    transform: translatex(-360px);
+  }
+
+  100% {
+    transform: translatex(450px);
+  }
+}
